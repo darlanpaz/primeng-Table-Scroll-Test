@@ -1,0 +1,45 @@
+<div class="card">
+  <p-panel header="tabela dos demonio">
+    <div class="header">
+      <span>Code</span>
+      <span>Name</span>
+      <span>Category</span>
+      <span>Quantity</span>
+    </div>
+
+    <div class="overflow">
+      <p-table [value]="products" styleClass="p-datatable-sm">
+        <ng-template pTemplate="body" let-product>
+          <tr>
+            <td style="width: 150px;">{{ product.code }}</td>
+            <td style="min-width: 80px;">{{ product.name }}</td>
+            <td style="width: 150px; ">{{ product.category }}</td>
+            <td style="width: 80px; ">{{ product.quantity }}</td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </div>
+  </p-panel>
+</div>
+
+<div class="card">
+  <div class="header">
+    <span>Code</span>
+    <span>Name</span>
+    <span>Category</span>
+    <span>Quantity</span>
+  </div>
+
+  <div class="overflow">
+    <p-table [value]="products" styleClass="p-datatable-sm">
+      <ng-template pTemplate="body" let-product>
+        <tr>
+          <td style="width: 150px;">{{ product.code }}</td>
+          <td style="min-width: 80px;">{{ product.name }}</td>
+          <td style="width: 150px; ">{{ product.category }}</td>
+          <td style="width: 80px; ">{{ product.quantity }}</td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+</div>
